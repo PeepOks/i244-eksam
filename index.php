@@ -26,7 +26,7 @@
 		//logime IP ja aja logifaili
 		$logfile = "kylalised.txt";
 		$ip = $_SERVER['REMOTE_ADDR'];
-		$line = date('Y-m-d H:i:s') . $ip;	
+		$line = date('Y-m-d H:i:s') . " - " . $ip;	
 		file_put_contents($logfile, $line . PHP_EOL, FILE_APPEND);
 		$_SESSION["userip"]=$ip;
 	}
