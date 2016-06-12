@@ -38,7 +38,7 @@
   		$lines = count(file($logfile));
   		echo "Sellel lehel on $lines külastust";
 	?>
-	<br> 
+	</br> 
   	<a href="logout.php" >Lõpeta sessioon</a>
 </div>
 </body>
